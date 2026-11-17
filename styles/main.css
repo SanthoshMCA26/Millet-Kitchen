@@ -146,7 +146,6 @@ figcaption {
 }
 
 footer {
-  clear: both;
   background: linear-gradient(to right, #1f4d3a 0, #f6edc8 60%, #1f4d3a 100%);
   color: #fff;
   padding: 12px 25px;
@@ -170,6 +169,7 @@ footer span {
 }
 
 @media screen and (max-width:900px) {
+
   .left-aside aside,
   .left-aside section {
     float: none;
@@ -270,6 +270,7 @@ footer span {
 }
 
 @media screen and (max-width:900px) {
+
   .right-aside section,
   .right-aside aside {
     float: none;
@@ -303,15 +304,13 @@ footer span {
 }
 
 .thumbs label {
-  display: block;
-  min-height: 45px;
   color: #7a2e12;
   cursor: pointer;
   font-weight: bold;
 }
 
 .thumbs label:hover {
-  color: #1f4d3a;
+  color: #dd8b0f;
 }
 
 .dish-selector {
@@ -326,16 +325,16 @@ footer span {
   border: 0;
 }
 
-#dish-koozh:focus-visible ~ aside label[for="dish-koozh"],
-#dish-adai:focus-visible ~ aside label[for="dish-adai"],
-#dish-mudde:focus-visible ~ aside label[for="dish-mudde"] {
-  outline: 2px solid #1f4d3a;
+#dish-koozh:focus-visible~aside label[for="dish-koozh"],
+#dish-adai:focus-visible~aside label[for="dish-adai"],
+#dish-mudde:focus-visible~aside label[for="dish-mudde"] {
+  outline: 2px solid #08d07c;
   outline-offset: 3px;
 }
 
-#dish-koozh:checked ~ aside label[for="dish-koozh"],
-#dish-adai:checked ~ aside label[for="dish-adai"],
-#dish-mudde:checked ~ aside label[for="dish-mudde"] {
+#dish-koozh:checked~aside label[for="dish-koozh"],
+#dish-adai:checked~aside label[for="dish-adai"],
+#dish-mudde:checked~aside label[for="dish-mudde"] {
   color: #1f4d3a;
 }
 
@@ -345,9 +344,9 @@ footer span {
   gap: 24px;
 }
 
-#dish-koozh:checked ~ section .dish-koozh,
-#dish-adai:checked ~ section .dish-adai,
-#dish-mudde:checked ~ section .dish-mudde {
+#dish-koozh:checked~section .dish-koozh,
+#dish-adai:checked~section .dish-adai,
+#dish-mudde:checked~section .dish-mudde {
   display: grid;
 }
 
@@ -391,7 +390,7 @@ footer span {
 
 .carousel input {
   position: absolute;
-  
+
 }
 
 .viewport {
@@ -409,7 +408,7 @@ footer span {
   margin: 0;
 }
 
-.slide img {  
+.slide img {
   width: 100%;
 }
 
